@@ -1,0 +1,73 @@
+<style>
+.custom-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #075e54;
+    color: #fff;
+    padding: 18px 0 18px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 9999;
+    border-bottom: 2px solid #25d366;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.custom-header-text {
+    display: inline-block;
+    margin-left: 280px;
+}
+.main {
+    padding-top: 70px !important; /* Push content below header */
+}
+.chat-container {
+    margin: auto;
+    padding: 20px 0 120px 0; /* Extra bottom padding for input box */
+    max-height: 30vh;
+    overflow-y: auto;
+}
+.message-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+.message-user {
+    margin-left: auto;
+    background: #dcf8c6;
+    color: #222;
+    border-radius: 18px 18px 0 18px;
+    padding: 10px 16px;
+    max-width: 70%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+}
+.message-agent {
+    margin-right: auto;
+    background: #fff;
+    color: #222;
+    border-radius: 18px 18px 18px 0;
+    padding: 10px 16px;
+    max-width: 70%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+    border: 1px solid #ececec;
+}
+.stTextInput>div>div>input {
+    border-radius: 20px;
+    padding: 10px;
+}
+/* Fixed input form at bottom */
+.fixed-input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: #f7f7f7;
+    padding: 16px 0 16px 0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+    z-index: 100;
+}
+/* Center the input form */
+.fixed-input > div {
+    max-width: 600px;
+    margin: auto;
+}
+</style>
+<div class="custom-header"><div class="custom-header-text">🤖 Ollama Agent Chat</div></div>
